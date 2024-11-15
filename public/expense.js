@@ -145,7 +145,7 @@ async function handlePurchase(e) {
           orderId: response.razorpay_order_id,
         };
 
-        axios.post('http://localhost:000/premium/premiummembership', payment, {
+        axios.post('http://localhost:3000/premium/premiummembership', payment, {
           headers: { Authorization:  token  },
         })
         .then(res => {

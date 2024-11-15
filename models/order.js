@@ -19,7 +19,7 @@ const Order = sequelize.define('order', {
     type: Sequelize.STRING,
     allowNull: false,
     validate: {
-        isIn: [['created', 'completed', 'failed', 'pending','CREATED', 'COMPLETED', 'FAILED', 'PENDING']] // Optional: restrict to specific values
+        isIn: [['created', 'completed', 'failed', 'pending','CREATED', 'COMPLETED', 'FAILED', 'PENDING', 'SUCCESSFUL']] // Optional: restrict to specific values
     }
 }
 });

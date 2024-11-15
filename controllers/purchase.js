@@ -36,7 +36,8 @@ const purchasePremium = async (req, res) => {
 const updateTransactionStatus = async (req, res) => {
   const { orderId, paymentId, msg } = req.body;
   const userId = req.user.id;
-
+console.log(orderId);
+console.log(paymentId)
   try {
     // Find the order for the current user
     const order = await Order.findOne({ where: { orderid: orderId, userId } });

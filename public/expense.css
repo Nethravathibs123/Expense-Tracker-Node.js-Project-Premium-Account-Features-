@@ -95,3 +95,40 @@ button:hover {
     margin-left: 5px; /* Add some space between the buttons */
     padding: 5px;
 }
+
+
+/* Container for the buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;  /* Stack buttons vertically */
+    gap: 15px;  /* Space between buttons */
+    align-items: center;  /* Center align the buttons horizontally */
+  }
+  
+  /* Style for the "Purchase Premium Membership" button */
+  .purchase-btn {
+    padding: 10px 20px;  /* Adjust the padding as needed */
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style for the "You are Premium User" button */
+  .btn-primary {
+    padding: 10px 20px;  /* Same padding for consistency */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0c64b1;  /* Green color to indicate success */
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #088187;  /* Darken the button when hovered */
+  }
+  
+  /* Optionally hide the second button initially */
+  #purchase {
+    display: none;
+  }
+  
